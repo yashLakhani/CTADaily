@@ -63,7 +63,7 @@ def load_data(file_path, text_columns):
 def build_corpus(data_frame):
     dictionary = corpora.Dictionary(data_frame)
     corpus = [dictionary.doc2bow(text) for text in data_frame]
-    return id2word, corpus
+    return dictionary, corpus
 
 
 def get_text_data(filepath, text_column):
