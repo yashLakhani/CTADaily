@@ -98,29 +98,23 @@ def print_topics(lda_model):
         print('Topic: {} \nWords: {}'.format(idx, topic))
 
 
-def build_lda_model(model_type, corpus, dictionary, num_topics):
+def build_lda_model(mallet_path, model_type, corpus, dictionary, num_topics):
     if model_type == 'Mallet':
-        return lda_mallet('C:\\Users\\Yash\mallet\\bin\\mallet', corpus, dictionary, num_topics)
+        return lda_mallet(mallet_path, corpus, dictionary, num_topics)
     if model_type == 'Multicore':
         return lda_multicore(corpus, dictionary, num_topics)
 
 
-def get_coherence_scores(tokens, corpus, dictionary, topic_steps):
+def get_coherence_scores(mallet_path, tokens, corpus, dictionary, topic_steps):
     scores = []
     models = []
 
     for i in topic_steps:
         print('Building Model with {} #Topics'.format(i))
-        model = build_lda_model('Mallet', corpus, dictionary, num_topics=i)
+        model = build_lda_model(mallet_path, 'Mallet', corpus, dictionary, num_topics=i)
         models.append(model)
         coherence = CoherenceModel(model=model, texts=tokens, dictionary=dictionary, coherence='c_v')
         scores.append(coherence.get_coherence())
         print('Coherence {}'.format(coherence.get_coherence()))
     return models, scores
-
-from optparse import OptionParser
-
-parser = OptionParser()
-parser.add_option("-p", "--path", dest="mallet",
-                  help="path to mallet")
 
