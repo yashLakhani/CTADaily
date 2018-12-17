@@ -1,6 +1,6 @@
 # CTADaily
 
-CTADaily aims to provide predictions on market sentiment for a given commodity. This is done by building a topic model for Reuters headlines from 2014 to 2016, from which we can use topic distributions as features for a regression model to determine whether or not that given commodity will go up or down. 
+CTADaily aims to provide predictions on market sentiment (up or down) for a given commodity. This is done by building a topic model for Reuters headlines from 2014 to 2016, from which we can use topic distributions as features for a regression model to determine whether or not that given commodity will go up or down. 
 
 This GitHub repo has all headlines published from Reuters between 2007 and 2016 in a pickled file format. These are then unserialized and then converted from a file corpus to a line corpus (stored as single CSV file). These headlines are filtered for the occurence of the word 'oil'. 
 
@@ -20,5 +20,14 @@ To begin with CTADaily please navigate to the IPython Notebook, which can be run
 -  CTADaily.ipynb	(Notebook To Run)
 -  CTADaily.py	(Contains Helper Methods)
 -  DCOILWTICO.csv (Data Extract from FRED)
--  WTI-LDA-TOPIC.csv	(LDA Model Saved)
+-  WTI-LDA-TOPIC.csv	(LDA Topic Distributions)
 -  WTI-NEWS.csv (Reuters Headlines - Line Corpus)
+
+You will require a few packages to get this working : pandas, matplotlib, gensim, nltk, pyLDAvis, statsmodels, sklearn
+
+Please run the following before beginning: 
+# import nltk
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+
+If you have issues with your Mallet installation, please use the LDA Multicore model instead. 
