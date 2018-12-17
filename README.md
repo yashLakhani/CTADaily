@@ -26,8 +26,8 @@ To begin with CTADaily please navigate to the IPython Notebook, which can be run
 You will require a few packages to get this working : pandas, matplotlib, gensim, nltk, pyLDAvis, statsmodels, sklearn
 
 Please run the following before beginning: 
-# import nltk
-# nltk.download('stopwords')
-# nltk.download('wordnet')
+import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 If you have issues with your Mallet installation, please use the LDA Multicore model instead. 
