@@ -13,3 +13,7 @@ If you haven't already please install mallet. There is also an alternative LDA m
 
 https://programminghistorian.org/en/lessons/topic-modeling-and-mallet#installing-mallet
 
+### Usage
+
+To begin with CTADaily please navigate to the IPython Notebook, which can be run cell by cell to walkthrough topic modelling and implementation/optimisation techniques. 
+
