@@ -14,7 +14,43 @@ The source of data is from this GitHub Repo : https://github.com/philipperemy/Re
 - Optimise LDA Mallet Model by Number of Topics vs Coherence Score
 - Use Topic Distributions as features for Regression Model on Oil Price (Dummy Variable, see Notebook)
 
-### Function Overview 
+### Function Overview (Helper Methods)
+```
+def lemmatize_fast(text):
+```
+```
+def load_stop_words(language, removal_words=[]):
+```
+```
+def pre_process_text(text):
+```
+```
+def load_data(file_path, text_columns):
+```
+```
+def build_corpus(data_frame):
+```
+```
+def get_text_data(filepath, text_column):
+```
+```
+def get_tokens(data_frame, text_column):
+```
+```
+def lda_multicore(corpus, id2word, num_topics):
+```
+```
+def lda_mallet(mallet_path, corpus, dictionary, num_topics):
+```
+```
+def print_topics(lda_model):
+```
+```
+def build_lda_model(mallet_path, model_type, corpus, dictionary, num_topics):
+```
+```
+def get_coherence_scores(mallet_path, tokens, corpus, dictionary, topic_steps):
+```
 
 
 ### Getting Setup
