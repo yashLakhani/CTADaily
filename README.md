@@ -6,9 +6,12 @@ This GitHub repo has all headlines published from Reuters between 2007 and 2016 
 
 The source of data is from this GitHub Repo : https://github.com/philipperemy/Reuters-full-data-set
 
-### Technology Overview
+### Implementation
 
-- Pre process using NLTK Stopwords, Gensim Simple Pre Proccessor. Spacy has not been used despite it's advantages (please see Tech Review). 
+Using IPython Notebook in conjunction with CTADaily.py
+
+- Pre process using NLTK Stopwords, Gensim Simple Pre Proccessor. 
+Spacy has not been used despite it's advantages (please see Tech Review). 
 - Form Corpus for a given text representation (Unigram or Bigram)
 - Build LDA Mallet Model (Gensim) 
 - Optimise LDA Mallet Model by Number of Topics vs Coherence Score
