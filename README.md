@@ -17,8 +17,8 @@ https://programminghistorian.org/en/lessons/topic-modeling-and-mallet#installing
 
 To begin with CTADaily please navigate to the IPython Notebook, which can be run cell by cell to walkthrough topic modelling and implementation/optimisation techniques. 
 
-CTADaily.ipynb	(Notebook To Run)
-CTADaily.py	(Contains Helper Methods)
-DCOILWTICO.csv (Data Extract from FRED)
-WTI-LDA-TOPIC.csv	(LDA Model Saved)
-WTI-NEWS.csv (Reuters Headlines - Line Corpus)
+-  CTADaily.ipynb	(Notebook To Run)
+-  CTADaily.py	(Contains Helper Methods)
+-  DCOILWTICO.csv (Data Extract from FRED)
+-  WTI-LDA-TOPIC.csv	(LDA Model Saved)
+-  WTI-NEWS.csv (Reuters Headlines - Line Corpus)
