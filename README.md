@@ -33,3 +33,7 @@ nltk.download('wordnet')
 ```
 
 If you have issues with your Mallet installation, please use the LDA Multicore model instead. 
+
+```
+lda_model = build_lda_model('Multicore', corpus, dictionary, num_topics=10)
+```
