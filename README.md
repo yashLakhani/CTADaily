@@ -9,5 +9,7 @@ The source of data is from this GitHub Repo : https://github.com/philipperemy/Re
 
 ### Getting Setup
 
-If you haven't already please install mallet. As that will be required to run the following notebook. There is also a back up alterative lda model we will allow usage of (LDA Multicore).
+If you haven't already please install mallet. There is also an alternative LDA model we will allow usage of (LDA Multicore). 
+
+https://programminghistorian.org/en/lessons/topic-modeling-and-mallet#installing-mallet
 
