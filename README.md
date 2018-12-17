@@ -1,4 +1,4 @@
-# CTADaily
+# CTADaily (yashl3)
 
 CTADaily aims to provide predictions on market sentiment (up or down) for a given commodity. This is done by building a topic model for Reuters headlines from 2014 to 2016, from which we can use topic distributions as features for a regression model to determine whether or not that given commodity will go up or down. 
 
